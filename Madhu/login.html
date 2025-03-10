@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .login-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(login\ bg.webp);
+        background-size: cover;
+    }
+
+    .login-container {
+        position: absolute;
+        top: 10px;
+        padding: 70px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+    }
+
+    .login-container .logo img {
+        height: 100px;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .login-container h2 {
+        margin-bottom: 20px;
+        padding-top: 50px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .login-container button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="login-page">
+        <div class="login-container">
+            <div class="logo">
+                <img src="letshop-removebg-.png" alt="MyStore Logo">
+            </div>
+            <h2>Login</h2>
+            <form onsubmit="return loginUser()">
+                <input type="text" placeholder="Username" required><br>
+                <input type="password" placeholder="Password" required><br>
+                <button type="submit" onclick="navigate()">Login</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function navigate(){
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
